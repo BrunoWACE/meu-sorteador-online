@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    margin-top: -50px;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.dice-container {
+    position: relative;
+    display: inline-block;
+}
+
+.main-title {
+    position: absolute;
+    top: 70%;
+    /* centraliza verticalmente */
+    left: 50%;
+    /* centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* corrige o ponto de origem */
+    font-size: 60px;
+    font-weight: 800;
+    color: #AEC346;
+    text-align: center;
+    text-shadow: 0px 0px 10px #aec34650;
+    white-space: nowrap;
+    pointer-events: none;
+    /* permite clicar na imagem abaixo se necessário */
+}
+
+
+
+p {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #FFFFFF
+}
+
+.inputs-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    width: 200px;
+    height: 74px;
+    border: #FFFFFF40;
+    border-radius: 14px;
+    border-width: 1px;
+    background: #FFFFFF40;
+    font-weight: 500;
+    font-size: 35px;
+    color: #FFFFFF;
+    padding-left: 15px;
+}
+
+
+/* Remove os botões padrão no Chrome, Safari, Edge 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+Remove no Firefox 
+input[type="number"] {
+    appearance: textfield;  (padrão) 
+    -moz-appearance: textfield;  (Firefox) 
+}*/
+
+
+button {
+    width: 300px;
+    height: 72px;
+    top: 858px;
+    left: 849px;
+    background: #AEC346;
+    border: #AEC346;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.5px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px -15px #AEC346;
+
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.result {
+    font-size: 50px;
+    font-weight: 700;
+    color: #AEC346;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    transition: all 0.5s ease;
+
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    section {
+        padding: 0 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+
+    img {
+        width: 290px;
+        margin-bottom: 0px;
+    }
+
+    .inputs-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -10px;
+    }
+
+
+    input {
+        max-width: 70%;
+        height: 50px;
+        font-size: 22px;
+
+    }
+
+    .main-title {
+        width: 450px;
+        font-size: 10vw;
+        font-weight: 900;
+        white-space: normal;
+    }
+
+    p.result {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+}
