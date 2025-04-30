@@ -1,4 +1,4 @@
-<b>Esse é um projeto prático que desenvolvi para treinar manipulação de DOM com JavaScript</b>, criando uma aplicação que permite realizar sorteios entre números ou nomes. 
+<b>Esse é um projeto prático que desenvolvi para treinar manipulação de DOM com JavaScript</b>, criando uma aplicação que permite realizar sorteios entre números. 
 O objetivo é praticar o uso de funções, eventos, inputs dinâmicos e lógica de aleatoriedade no frontend.
 <br> 
 <h3>💡 Funcionalidades:</h3>
