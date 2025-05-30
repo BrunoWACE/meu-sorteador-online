@@ -29,6 +29,16 @@ Mais do que um simples sorteador, este projeto é um exercício prático de raci
 
 ---
 
+## 🔁 Funcionalidades
+
+- ✅ Sorteio de número aleatório com intervalo definido pelo usuário
+- ✅ Contagem regressiva animada antes do sorteio
+- ✅ Exibição do último número sorteado como histórico
+- ✅ Botão com feedback visual ao clicar
+- ✅ Interface simples, clara e fácil de usar
+
+---
+
 ## 📱 Responsividade</h3>
 Adaptado para funcionar **perfeitamente em celulares**:
 - Botões reajustados
