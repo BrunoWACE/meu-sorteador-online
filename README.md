@@ -1,29 +1,50 @@
-<b>Esse é um projeto prático que desenvolvi para treinar manipulação de DOM com JavaScript</b>, criando uma aplicação que permite realizar sorteios entre números. 
-O objetivo é praticar o uso de funções, eventos, inputs dinâmicos e lógica de aleatoriedade no frontend.
-<br> 
-<h3>💡 Funcionalidades:</h3>
-- Sorteio de números entre valores definidos pelo usuário   
-- Interface simples, moderna e fácil de usar  
-- Design responsivo para diferentes dispositivos  
-- Resultado exibido instantaneamente após o sorteio  
-<br> 
-<h3>🖼️ Preview do Projeto</h3> 
-<br> 
-<br> 
-<h3>🛠 Tecnologias Utilizadas</h3>
+# 🎲 MEU SORTEADOR ONLINE
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)  
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) 
+Bem-vindo ao ***MEU SORTEADOR ONLINE***, um projeto desenvolvido com ***HTML5***, ***CSS3*** e ***JavaScript!***
+<br>
+Este aplicativo sorteia um número aleatório com um visual moderno e design responsivo. Criado com um propósito especial:
+<br>
+Praticar e consolidar a lógica de programação em JavaScript de forma divertida, visual e interativa.
+<br>
+Mais do que um simples sorteador, este projeto é um exercício prático de raciocínio lógico e manipulação de DOM, desenvolvido como parte dos meus estudos no <a href="https://rodolfomori.com.br">DevClub</a></b>.
+
+---
+
+## ⚙️ Como funciona
+- O usuário informa o valor ***inicial*** e o valor ***final*** nos campos de entrada.
+- Clicando em ***Sortear***, inicia-se uma contagem regressiva de 3 segundos.
+- pós a contagem, o número sorteado aparece na tela.
+- O último número sorteado é exibido na tela como histórico.
+
+---
+
+## 🧪 Tecnologias usadas
+
+| Tecnologia | Descrição |
+|------------|------------|
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | Estrutura da página |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)| Estilização visual e animações |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)| Lógica do jogo e interatividade |
+| ![Responsivo](https://img.shields.io/badge/Responsivo-100%25%20Mobile-00c4cc?style=flat)| Suporte para dispositivos móveis |
+
+---
+
+## 📱 Responsividade</h3>
+Adaptado para funcionar **perfeitamente em celulares**:
+- Botões reajustados
+- Fontes redimensionadas
+- Suporte a **toque na tela**
+
+---
+
+## 🖼️ Preview do Projeto</h3> 
+<br> 
+<br> 
+
+---
+
+## 🚀 Link do Sorteador
+[Teste aqui!]() 
+💡 Dica: segure Ctrl (ou clique com o botão direito) para abrir em uma nova guia!
 
 
-<br> <h3>📁 Estrutura de Pastas</h3>
-📦 conversor-de-moedas
-├── index.html
-├── styles.css
-├── script.js
-└── assets
-
-<br> <br> <h3>📱 Responsividade</h3>
-O projeto foi desenvolvido para se adaptar a diferentes tamanhos de tela, proporcionando uma boa experiência tanto para desktop quanto para dispositivos móveis, com ajustes básicos usando media queries.
