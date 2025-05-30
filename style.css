@@ -24,8 +24,8 @@ section {
 
 img {
     margin-top: -50px;
-    width: 400px;
-    margin-bottom: 50px;
+    width: 300px;
+    margin-bottom: -10px;
 }
 
 .dice-container {
@@ -41,8 +41,8 @@ img {
     /* centraliza horizontalmente */
     transform: translate(-50%, -50%);
     /* corrige o ponto de origem */
-    font-size: 60px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: 700;
     color: #AEC346;
     text-align: center;
     text-shadow: 0px 0px 10px #aec34650;
@@ -66,8 +66,8 @@ p {
 }
 
 input {
-    width: 200px;
-    height: 74px;
+    width: 150px;
+    height: 60px;
     border: #FFFFFF40;
     border-radius: 14px;
     border-width: 1px;
@@ -78,8 +78,11 @@ input {
     padding-left: 15px;
 }
 
+/*Remove os botões de acesso dos inputs [Garantir que sejam do tipo type number*/
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 
-/* Remove os botões padrão no Chrome, Safari, Edge 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -87,16 +90,9 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-Remove no Firefox 
-input[type="number"] {
-    appearance: textfield;  (padrão) 
-    -moz-appearance: textfield;  (Firefox) 
-}*/
-
-
 button {
-    width: 300px;
-    height: 72px;
+    width: 250px;
+    height: 68px;
     top: 858px;
     left: 849px;
     background: #AEC346;
@@ -128,56 +124,175 @@ button:active {
     margin-top: 20px;
     margin-bottom: 35px;
     transition: all 0.5s ease;
-
+    text-shadow: 0px 0px 10px #aec34650;
 }
 
+.overlay {
+    display: none;
+    /* começa invisível */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown {
+    font-size: 120px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 10;
+    /* 🔽 Reduza para 10 ou algo menor */
+    justify-content: center;
+    align-items: center;
+}
+
+canvas.confetti-canvas {
+    position: fixed !important;
+    pointer-events: none;
+    z-index: 9999 !important;
+}
+
+
+.countdown {
+    font-size: 250px;
+    font-weight: bold;
+    color: #AEC346;
+    text-shadow: 0px 0px 10px #aec34650;
+}
+
+@keyframes zoomFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.countdown-content {
+    text-align: center;
+}
+
+.sorteado-text {
+    font-size: 78px;
+    font-weight: bold;
+    color: #AEC346;
+    text-shadow: 0px 0px 10px #aec34650;
+    margin-top: 30px;
+    display: none;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ultimo-numero {
+    font-size: 28px;
+    color: #ffffff80;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.numero-destaque {
+    font-size: 250px;
+    color: #AEC346;
+}
+
+.copy {
+    color: #ffffff80;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+
 @media (max-width: 600px) {
-    body {
-        padding: 20px;
-    }
 
-    section {
-        padding: 0 20px;
-        width: 100%;
-        max-width: 500px;
-    }
-
-
-    img {
-        width: 290px;
-        margin-bottom: 0px;
-    }
-
-    .inputs-container {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: -10px;
-    }
-
-
-    input {
-        max-width: 70%;
-        height: 50px;
-        font-size: 22px;
-
+    .linha1,
+    .linha2 {
+        display: block;
     }
 
     .main-title {
-        width: 450px;
-        font-size: 10vw;
-        font-weight: 900;
-        white-space: normal;
+        height: 160;
+        font-size: 40px;
     }
 
-    p.result {
-        font-size: 7vw;
-        text-align: center;
+    img {
+        width: 300px;
     }
 
-    button {
-        width: 200px;
-        height: 50px;
+    p {
+        font-size: 20px;
+    }
+
+    input {
+        width: 150px;
+        height: 60px;
         font-size: 25px;
     }
 
+    button {
+        width: 250px;
+        height: 70px;
+        font-size: 35px;
+    }
+
+    .ultimo-numero {
+        font-size: 18px;
+    }
+
+    .numero-destaque {
+        font-size: 150px;
+        color: #AEC346;
+    }
+
+    .sorteado-text {
+        font-size: 48px;
+    }
+
+    .copy {
+        margin-top: 20px;
+    }
+
+    .copy-conteiner {
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 20px;
+    }
 }
