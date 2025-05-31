@@ -32,7 +32,7 @@ function generateNumber() {
         } else {
             const result = Math.floor(Math.random() * (max - min + 1)) + min;
             countdownText.textContent = "";
-            sorteadoText.innerHTML = `Parabéns!<br>Esse é o Número sorteado<br><br><strong class="numero-destaque">${result}</strong>`;
+            sorteadoText.innerHTML = `Parabéns!<br>Esse é o Número Sorteado<br><br><strong class="numero-destaque">${result}</strong>`;
             sorteadoText.style.display = "block";
 
             // Fecha a tela de blur depois do tempo de exibição + animação
