@@ -47,9 +47,9 @@ Adaptado para funcionar **perfeitamente em celulares**:
 
 ---
 
-## 🖼️ Preview do Projeto</h3> 
-<br> 
-<br> 
+## 🖼️ Preview do Jogo
+
+<img src="./assets/sort.gif"/>
 
 ---
 
