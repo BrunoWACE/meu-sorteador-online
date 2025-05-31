@@ -39,10 +39,10 @@ function generateNumber() {
             setTimeout(() => {
                 overlay.style.display = "none";
 
-                if (resultElement) {
+                /*if (resultElement) {
                     resultElement.style.display = "none";
                     resultElement.textContent = "";
-                }
+                }*/
 
                 if (ultimoNumero) {
                     ultimoNumero.textContent = `Último número sorteado: ${result}`;
