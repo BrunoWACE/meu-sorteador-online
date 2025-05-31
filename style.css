@@ -80,7 +80,9 @@ input {
 
 /*Remove os botões de acesso dos inputs [Garantir que sejam do tipo type number*/
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;   /* Firefox */
+  -webkit-appearance: none;     /* Chrome, Safari, Edge (antigos) */
+  appearance: none;             /* Fallback “sem prefixo” */
 }
 
 input[type="number"]::-webkit-inner-spin-button,
