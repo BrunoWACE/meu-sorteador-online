@@ -9,12 +9,12 @@ function generateNumber() {
 
     const zoomDuration = 2; // segundos (controle do tempo da animação e da contagem)
 
-    if (min >= max) {
+    /*if (min >= max) {
         resultElement.textContent = "O valor mínimo deve ser menor que o valor máximo.";
         resultElement.style.color = "#FFFFFF";
         resultElement.style.display = "block";
         return;
-    }
+    }*/
 
     let countdown = 3;
     overlay.style.display = "flex";
