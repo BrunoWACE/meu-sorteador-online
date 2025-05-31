@@ -279,16 +279,6 @@ canvas.confetti-canvas {
         margin-top: 20px;
     }
 
-.copy-conteiner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-size: 1rem;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-}
     .result {
     font-size: 20px;
     text-align: center;
