@@ -12,6 +12,7 @@ function generateNumber() {
     if (min >= max) {
         resultElement.textContent = "O valor mínimo deve ser menor que o valor máximo.";
         resultElement.style.color = "#FFFFFF";
+        resultElement.style.display = "block";
         return;
     }
 
@@ -39,8 +40,8 @@ function generateNumber() {
                 overlay.style.display = "none";
 
                 if (resultElement) {
-                    resultElement.textContent = `Número sorteado: ${result}`;
-                    resultElement.style.color = "#AEC346";
+                    resultElement.style.display = "none";
+                    resultElement.textContent = "";
                 }
 
                 if (ultimoNumero) {
@@ -49,7 +50,7 @@ function generateNumber() {
             }, (zoomDuration * 1000) + 3000); // exemplo: 2s + 1.5s de pausa = 3.5s
 
             // Confetti explosivo central
-                confetti({
+            confetti({
                 particleCount: 500, // Mais partículas!
                 spread: 160,        // Espalha mais pra todos os lados
                 startVelocity: 60,  // Velocidade inicial mais alta

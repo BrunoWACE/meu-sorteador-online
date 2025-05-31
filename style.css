@@ -80,7 +80,9 @@ input {
 
 /*Remove os botões de acesso dos inputs [Garantir que sejam do tipo type number*/
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;   /* Firefox */
+  -webkit-appearance: none;     /* Chrome, Safari, Edge (antigos) */
+  appearance: none;             /* Fallback “sem prefixo” */
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -105,8 +107,7 @@ button {
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
-    box-shadow: 0px 0px 50px -15px #AEC346;
-
+    box-shadow: 0px 0px 40px -15px #AEC346;
 }
 
 button:hover {
@@ -118,13 +119,13 @@ button:active {
 }
 
 .result {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     color: #AEC346;
     margin-top: 20px;
     margin-bottom: 35px;
     transition: all 0.5s ease;
-    text-shadow: 0px 0px 10px #aec34650;
+    text-shadow: 0px 0px 7px #aec34650;
 }
 
 .overlay {
@@ -167,7 +168,6 @@ canvas.confetti-canvas {
     pointer-events: none;
     z-index: 9999 !important;
 }
-
 
 .countdown {
     font-size: 250px;
@@ -213,6 +213,7 @@ canvas.confetti-canvas {
     font-size: 28px;
     color: #ffffff;
     text-align: center;
+    margin-top: -25px;
     margin-bottom: 30px;
     font-weight: 400;
 }
@@ -229,7 +230,6 @@ canvas.confetti-canvas {
     width: 100%;
 }
 
-
 @media (max-width: 600px) {
 
     .linha1,
@@ -243,7 +243,7 @@ canvas.confetti-canvas {
     }
 
     img {
-        width: 300px;
+        width: 260px;
     }
 
     p {
@@ -279,9 +279,20 @@ canvas.confetti-canvas {
         margin-top: 20px;
     }
 
-    .copy-conteiner {
-        font-size: 1rem;
-        padding: 10px;
-        margin-top: 20px;
-    }
+.copy-conteiner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+    .result {
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+ 
+}
 }
