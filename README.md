@@ -1,6 +1,6 @@
 # 🎲 MEU SORTEADOR ONLINE
 
-Bem-vindo ao ***MEU SORTEADOR ONLINE***, um projeto desenvolvido com ***HTML5***, ***CSS3*** e ***JavaScript!***
+Bem-vindo ao **MEU SORTEADOR ONLINE**, um projeto desenvolvido com **HTML5**, **CSS3** e **JavaScript!**
 <br>
 Este aplicativo sorteia um número aleatório com um visual moderno e design responsivo. Criado com um propósito especial:
 <br>
@@ -11,8 +11,9 @@ Mais do que um simples sorteador, este projeto é um exercício prático de raci
 ---
 
 ## ⚙️ Como funciona
-- O usuário informa o valor ***inicial*** e o valor ***final*** nos campos de entrada.
-- Clicando em ***Sortear***, inicia-se uma contagem regressiva de 3 segundos.
+- O usuário informa o valor **inicial** e o valor **final** nos campos de entrada.
+- **O valor mínimo deve ser menor que o valor máximo.**
+- Clicando em **Sortear**, inicia-se uma contagem regressiva de 3 segundos.
 - pós a contagem, o número sorteado aparece na tela.
 - O último número sorteado é exibido na tela como histórico.
 
