@@ -49,7 +49,7 @@ Adaptado para funcionar **perfeitamente em celulares**:
 
 ## 🖼️ Preview do Jogo
 
-<img src="./assets/sort.gif"/>
+<img src="./assets/ImgSort.gif"/>
 
 ---
 
