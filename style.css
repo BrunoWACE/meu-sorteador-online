@@ -243,11 +243,11 @@ canvas.confetti-canvas {
     }
 
     img {
-        width: 260px;
+        width: 230px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     input {
@@ -258,29 +258,33 @@ canvas.confetti-canvas {
 
     button {
         width: 250px;
-        height: 70px;
-        font-size: 35px;
+        height: 68px;
+        font-size: 34px;
     }
 
     .ultimo-numero {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .numero-destaque {
-        font-size: 150px;
+        font-size: 130px;
         color: #AEC346;
     }
 
     .sorteado-text {
-        font-size: 48px;
+        font-size: 46px;
     }
 
-    .copy {
-        margin-top: 20px;
-    }
+.copy {
+    position: fixed;
+    bottom: 18px;       /* 18px acima da borda inferior da tela */
+    left: 50%;          /* começa a 50% da largura da viewport */
+    transform: translateX(-50%); /* puxa o elemento para a esquerda metade da própria largura */
+    text-align: center; /* alinha o texto dentro do .copy, se houver mais de uma linha */
+}
 
     .result {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     width: 300px;
  
