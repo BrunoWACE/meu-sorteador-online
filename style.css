@@ -238,12 +238,12 @@ canvas.confetti-canvas {
     }
 
     .main-title {
-        height: 160;
+        height: 150;
         font-size: 40px;
     }
 
     img {
-        width: 230px;
+        width: 220px;
     }
 
     p {
@@ -257,8 +257,8 @@ canvas.confetti-canvas {
     }
 
     button {
-        width: 250px;
-        height: 68px;
+        width: 230px;
+        height: 65px;
         font-size: 34px;
     }
 
