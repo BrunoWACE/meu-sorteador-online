@@ -54,7 +54,7 @@ Adaptado para funcionar **perfeitamente em celulares**:
 ---
 
 ## 🚀 Link do Sorteador
-[Teste aqui!]() 
+[Teste aqui!](https://brunowace.github.io/meu-sorteador-online/) 
 💡 Dica: segure Ctrl (ou clique com o botão direito) para abrir em uma nova guia!
 
 
